@@ -5,6 +5,8 @@ const footer = document.querySelector('footer');
 
 const send_btn = document.querySelector('.send');
 
+const home_btn = document.querySelector('.home-btn');
+
 const discover_close = document.querySelector('.discover-close');
 
 const chat_btn = document.querySelector('.chat');
@@ -52,4 +54,10 @@ chat_btn.addEventListener('click', () => {
     chat_page.style.display = "flex";
     hero.style.display = "none";
     footer.style.display = "none";
+})
+
+home_btn.addEventListener('click', ()=>{
+  chat_page.style.display = "none";
+  hero.style.display = "flex";
+  footer.style.display = "flex";
 })

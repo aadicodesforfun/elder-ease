@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "gsap": "^3.13.0"
-  }
+  },
+  "name": "elderease",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Elderease is an interactive AI companion website designed for seniors. It provides a friendly, patient, and memory-aware assistant that engages users in meaningful conversations while offering a comforting digital presence.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aadicodesforfun/elder-ease.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aadicodesforfun/elder-ease/issues"
+  },
+  "homepage": "https://github.com/aadicodesforfun/elder-ease#readme"
 }

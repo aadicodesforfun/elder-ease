@@ -51,7 +51,7 @@ git clone https://github.com/your-username/elderease.git
 ## Usage
 
 - Click the **DISCOVER MORE** button to view additional information.
-- Click the **chat icon** to launch the AI chat interface (placeholder).
+- Click the **chat icon** to launch the AI chat interface.
 
 ---
 

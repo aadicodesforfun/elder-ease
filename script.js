@@ -16,6 +16,8 @@ const messageUI = document.querySelector('.message-ui');
 const API_KEY = "AIzaSyBupoaW1pNMn-KymvrJHMGreUzE1uLVVcc";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
+const sos_btn = document.querySelector('.sos-btn');
+
 // Function to call Gemini AI
 async function callGemini(userQuery) {
   try {
@@ -76,6 +78,10 @@ input.addEventListener("keypress", (e) => {
 
 // Discover overlay toggle
 discover_btn.addEventListener('click', () => {
+  gsap.from('.discover-more',{
+    x:"100%",
+    duration:0.8,
+  })
   discover.style.display = "flex";
 });
 discover_close.addEventListener('click', () => {

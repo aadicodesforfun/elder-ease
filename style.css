@@ -194,14 +194,17 @@ footer h2{
 
 .chat-ai{
     display: none;
+    padding:1.5rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position:absolute;
     height: 90vh;
+    overflow-y: auto;
     width: 100%;
     z-index: 20;
-    background-color: #F2EFEC;
+    background-color: #FFF4E6;
+    padding-bottom: 0;
 }
 
 .chat-ai h2{
@@ -255,3 +258,54 @@ input:focus{
     background-color: white;
 }
 
+.message-ui{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap:10px;
+    overflow-y:auto;
+    width: 100%;
+    height: 88vh;
+}
+
+.message{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px 14px;
+    align-items: center;
+    align-self: self-start;
+    min-width: 100px;
+    max-width: 330px;
+    min-height: 50px;
+    border-radius: 15px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    max-width: 70%;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.user-messages{
+    color: white;
+    background-color: gray;
+    align-self:flex-end;
+    border-bottom-right-radius: 0;
+}
+
+.bot-messages{
+    color:white;
+    height: auto;
+    background-color: black;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.input-container{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background:transparent;
+}

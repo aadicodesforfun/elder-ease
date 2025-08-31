@@ -1,4 +1,3 @@
-// ======== DOM ELEMENTS ========
 const discover = document.querySelector('.discover-more');
 const discover_btn = document.querySelector('.discover-btn');
 const discover_close = document.querySelector('.discover-close');
@@ -12,9 +11,8 @@ const chat_page = document.querySelector('.chat-ai');
 
 const input = document.querySelector('.queries');
 const send_btn = document.querySelector('.send');
-const messageUI = document.querySelector('.message-ui'); // Container for messages
+const messageUI = document.querySelector('.message-ui');
 
-// ======== Gemini API ========
 const API_KEY = "AIzaSyBupoaW1pNMn-KymvrJHMGreUzE1uLVVcc";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
@@ -38,8 +36,6 @@ async function callGemini(userQuery) {
     return "Error: Could not reach AI server.";
   }
 }
-
-// ======== MESSAGE FUNCTIONS ========
 
 // Add a message to the UI
 function addMessage(text, sender = "user") {
@@ -66,8 +62,6 @@ async function sendMessage() {
   const botReply = await callGemini(text);
   addMessage(botReply, "bot");
 }
-
-// ======== EVENT LISTENERS ========
 
 // Send button
 send_btn.addEventListener("click", sendMessage);

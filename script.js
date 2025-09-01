@@ -14,14 +14,12 @@ const input = document.querySelector('.queries');
 const send_btn = document.querySelector('.send');
 const messageUI = document.querySelector('.message-ui');
 
-// ===== AI Setup =====
 const API_KEY = "AIzaSyBupoaW1pNMn-KymvrJHMGreUzE1uLVVcc";
 const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 // Store conversation for context
 let chatHistory = [];
 
-// ===== Gemini AI Call =====
 async function callGemini(userQuery) {
   try {
     // Include previous chat messages for context
@@ -48,7 +46,6 @@ async function callGemini(userQuery) {
   }
 }
 
-// ===== Add message to UI =====
 function addMessage(text, sender = "user") {
   if (!text.trim()) return;
 
@@ -63,7 +60,6 @@ function addMessage(text, sender = "user") {
   if (sender === "user") chatHistory.push(`User: ${text}`);
 }
 
-// ===== Send message handler =====
 async function sendMessage() {
   const text = input.value.trim();
   if (!text) return;
@@ -75,7 +71,6 @@ async function sendMessage() {
   addMessage(botReply, "bot");
 }
 
-// ===== Event Listeners =====
 send_btn.addEventListener("click", sendMessage);
 
 input.addEventListener("keypress", (e) => {
@@ -85,7 +80,6 @@ input.addEventListener("keypress", (e) => {
   }
 });
 
-// ===== Discover Overlay Animations =====
 discover_btn.addEventListener('click', () => {
   discover.style.display = "flex";
   gsap.fromTo(

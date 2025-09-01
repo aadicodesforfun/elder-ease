@@ -64,6 +64,17 @@ async function sendMessage() {
   const text = input.value.trim();
   if (!text) return;
 
+  // Hide the greeting if it's visible
+  const greet = document.querySelector('.chat-greet');
+  if(greet){
+    gsap.to(greet, {
+      opacity: 0,
+      y:-20,
+      duration: 0.5,
+      onComplete: () => greet.remove()
+    })
+  }
+
   addMessage(text, "user");
   input.value = "";
 

@@ -4,6 +4,18 @@ Elderease is an interactive AI companion website designed for seniors. It provid
 
 ---
 
+## 📸 Screenshots
+
+*(Add your own images here by replacing the file paths or URLs)*
+
+- **Home Screen**
+  ![Home Screen](src/screenshots/home.png)
+
+- **Chat Interface**
+  ![Chat Interface](src/screenshots/chat.png)
+
+---
+
 ## Features
 
 - **Landing Page**: Hero section with a vertical “WE CARE” heading and a descriptive overview.

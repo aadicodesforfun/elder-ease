@@ -113,6 +113,11 @@ discover_close.addEventListener('click', () => {
 
 chat_btn.addEventListener('click', () => {
   chat_page.style.display = "flex";
+  gsap.from(chat_page, {
+    opacity: 0,
+    duration: 0.8,
+    translateY: "-30%"
+  })
   hero.style.display = "none";
   footer.style.display = "none";
 

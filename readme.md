@@ -29,21 +29,7 @@ Elderease is an interactive AI companion website designed for seniors. It provid
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **GSAP** (optional, currently commented out)
-
----
-
-## File Structure
-
-```
-├── index.html       # Main HTML file
-├── style.css        # Stylesheet
-├── script.js        # JavaScript for interactivity
-├── src/
-│   ├── icons/       # Chat and user icons
-│   └── cover-photo.jpg
-└── README.md        # This file
-```
+- **GSAP** 
 
 ---
 
@@ -61,15 +47,15 @@ git clone https://github.com/your-username/elderease.git
 ## Usage
 
 - Click the **DISCOVER MORE** button to view additional information.
-- Click the **chat icon** to launch the AI chat interface.
+- Click the **CHAT icon** to launch the AI chat interface.
+- Click the **SOS** button to call the emergency services
 
 ---
 
 ## Future Enhancements
 
-- Integrate AI chat functionality for real-time conversation.
-- Add animations using GSAP for smoother transitions.
-- Make the website fully responsive for mobile devices.
+- Make the bot agentic so that it can do more than just chatting with people.
+- Add sign in option for more personalised experiences.
 - Improve accessibility with ARIA labels and screen reader support.
 
 ---

@@ -326,8 +326,12 @@ input:focus{
   .options {
     padding: 1rem;
     font-size: 0.9rem;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 1.5rem;
+  }
+
+  .center-nav{
+    display: none;
   }
 
   .center-nav h1 {
@@ -335,7 +339,7 @@ input:focus{
   }
 
   .right-nav {
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .hero {

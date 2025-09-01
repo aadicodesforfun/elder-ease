@@ -99,11 +99,17 @@ discover_close.addEventListener('click', () => {
   });
 });
 
-// ===== Chat Page Animations =====
+
 chat_btn.addEventListener('click', () => {
   chat_page.style.display = "flex";
   hero.style.display = "none";
   footer.style.display = "none";
 
   input.focus();
+})
+
+home_btn.addEventListener('click', ()=>{
+  chat_page.style.display = "none";
+  hero.style.display = "flex";
+  footer.style.display = "flex";
 })
